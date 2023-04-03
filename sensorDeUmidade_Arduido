@@ -1,23 +1,34 @@
-
 #define PIN_SensorDeUmidade A0
-int valorLido; 
- 
+int valorLidoUmidade; 
+int menuChoice;
+  
 void setup(){
- pinMode(PIN_SensorDeUmidade, INPUT);
- Serial.begin(9600); 
- Serial.println("Lendo a umidade do solo..."); 
- delay(2000); 
+	pinMode(PIN_SensorDeUmidade, INPUT);
+	Serial.begin(9600); 
 }
  
 void loop(){  
-    Serial.print("Leitura da porta analogica: ");
-    Serial.println(analogRead(PIN_SensorDeUmidade));
-    // analogSoloMolhado/analogSoloSeco
-  	valorLido = constrain(analogRead(PIN_SensorDeUmidade),0,876); 
-	// analogSoloMolhado/analogSoloSeco e percSoloMolhado/percSoloSeco 
-	valorLido = map(valorLido,0,876,0,100);
+	Serial.println("Leitor de Umidade");
+	Serial.println("1 = Ler,  0 = Nada\n");
+	while (Serial.available() == 0) {} // espera comendo
+	menuChoice = Serial.parseInt(); 
   
-	Serial.print(valorLido); 
-  	Serial.println("%");
+	if(menuChoice){ // 0 = false, 1 = true
+		umidadeDaTerra();    
+	}
+}
+
+void umidadeDaTerra(){
+  
+    	Serial.print("Valor da porta analogica: ");
+	Serial.println(analogRead(PIN_SensorDeUmidade));
+    	// analogSoloMolhado/analogSoloSeco
+    	valorLidoUmidade = constrain(analogRead(PIN_SensorDeUmidade),0,876); 
+	// analogSoloMolhado/analogSoloSeco e percSoloMolhado/percSoloSeco 
+	valorLidoUmidade = map(valorLidoUmidade,0,876,0,100);
+  
+  	Serial.print("Umidade: ");
+	Serial.print(valorLidoUmidade); 
+  	Serial.println("%\n");
 	delay(1000); 
 }
