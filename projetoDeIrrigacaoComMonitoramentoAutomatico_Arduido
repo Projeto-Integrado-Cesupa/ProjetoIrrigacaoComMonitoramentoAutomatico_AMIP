@@ -1,0 +1,51 @@
+#include<LiquidCrystal.h>
+
+#define PIN_SensorDeUmidade A0
+int valorLidoUmidade; 
+int menuChoice;
+String mensagem1 = "";
+String mensagem2 = "";
+
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+void setup(){
+	pinMode(PIN_SensorDeUmidade, INPUT);
+  	lcd.begin(16, 2);
+	Serial.begin(9600); 
+  	delay(500);
+}
+ 
+void loop(){  
+	Serial.println("Leitor de Umidade");
+	Serial.println("1 = Ler,  0 = Nada\n");
+	while (Serial.available() == 0) {} // espera comendo
+	menuChoice = Serial.parseInt(); 	
+  
+	switch(menuChoice){ 
+      case 1:
+		umidadeDaTerra(); 
+      	display();
+      	break;
+	}
+}
+
+void umidadeDaTerra(){  
+    Serial.print("Valor da porta analogica: ");
+	Serial.println(analogRead(PIN_SensorDeUmidade));
+    valorLidoUmidade = constrain(analogRead(PIN_SensorDeUmidade),0,876); 
+	valorLidoUmidade = map(valorLidoUmidade,0,876,0,100);
+  
+  	Serial.print("Umidade: ");
+	Serial.print(valorLidoUmidade); 
+  	Serial.println("%\n");
+  	mensagem1 ="    Umidade:    ";
+  	mensagem2 = valorLidoUmidade;
+  	mensagem2 = "  "+mensagem2+"%";
+}
+  
+void display() {
+    lcd.setCursor(0,0);          
+    lcd.print(mensagem1); 
+    lcd.setCursor(2,1);           
+    lcd.print(mensagem2);
+}
