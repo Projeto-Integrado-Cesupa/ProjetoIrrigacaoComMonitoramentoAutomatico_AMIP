@@ -1,0 +1,23 @@
+
+#define PIN_SensorDeUmidade A0
+int valorLido; 
+ 
+void setup(){
+ pinMode(PIN_SensorDeUmidade, INPUT);
+ Serial.begin(9600); 
+ Serial.println("Lendo a umidade do solo..."); 
+ delay(2000); 
+}
+ 
+void loop(){  
+    Serial.print("Leitura da porta analogica: ");
+    Serial.println(analogRead(PIN_SensorDeUmidade));
+    // analogSoloMolhado/analogSoloSeco
+  	valorLido = constrain(analogRead(PIN_SensorDeUmidade),0,876); 
+	// analogSoloMolhado/analogSoloSeco e percSoloMolhado/percSoloSeco 
+	valorLido = map(valorLido,0,876,0,100);
+  
+	Serial.print(valorLido); 
+  	Serial.println("%");
+	delay(1000); 
+}
