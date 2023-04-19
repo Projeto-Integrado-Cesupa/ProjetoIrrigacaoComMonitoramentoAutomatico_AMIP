@@ -24,8 +24,7 @@
 
 5. Integrantes do projeto, com os respectivos contatos:  
 
-    Fabio Gabriel Areas 
-      fabio21070209@aluno.cesupa.br 
+    Fabio Gabriel Areas  ( fabio21070209@aluno.cesupa.br )
     Fellipe Santos
       fellipe20070001@aluno.cesupa.br 
     Liane Heidemann
