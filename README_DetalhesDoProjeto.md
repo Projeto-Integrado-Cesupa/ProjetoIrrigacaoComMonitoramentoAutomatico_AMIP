@@ -20,9 +20,8 @@
     Aplicativo para Controle e Monitoramento
 
 4. Telas ou imagens do funcionamento do produto: 
+    ![20230418_235936](https://user-images.githubusercontent.com/54177181/232956460-0be39abe-8494-47fd-96dd-092b576b91b5.jpg)
 
-    
-  
 5. Integrantes do projeto, com os respectivos contatos:  
 
     Fabio Gabriel Areas 
