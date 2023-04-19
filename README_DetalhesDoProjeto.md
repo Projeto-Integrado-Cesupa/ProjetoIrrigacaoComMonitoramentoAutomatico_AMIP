@@ -20,6 +20,7 @@
     Aplicativo para Controle e Monitoramento
 
 4. Telas ou imagens do funcionamento do produto: 
+
     ![Foto1_Menor2](https://user-images.githubusercontent.com/54177181/232957592-59daba79-c052-4035-bf16-1cabac4542f7.jpg)
 
 5. Integrantes do projeto, com os respectivos contatos:  
