@@ -1,55 +1,67 @@
 #include<LiquidCrystal.h>
 #include <dht.h>
+#define PIN_Cooler 8
 dht DHT;
 
-#define PIN_SensorDeUmidade A0
+#define PIN_SensorUmidadeSolo A0
 #define PIN_SensorDHT11 7
+#define PIN_Cooler 8 //LED
+#define Pin_Button 9
 
-int valorLidoUmidade; 
 String mensagem1;
 String mensagem2;
+bool estado = 0;
 
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
-void setup(){
-	pinMode(PIN_SensorDeUmidade, INPUT);
+void setup(){  
+  pinMode(PIN_SensorUmidadeSolo, INPUT);
+	pinMode(PIN_Cooler, OUTPUT);
+  pinMode(Pin_Button, INPUT_PULLUP);
   lcd.begin(16, 2);
 	Serial.begin(9600);
   delay(1000);    
   }
  
-void loop(){  
-	umidadeDaTerra(); 
-  display(); 
+void loop(){ 
+  if (digitalRead(Pin_Button == LOW))
+  {
+    estado = !estado; 
+    digitalWrite(PIN_Cooler, estado);
+    while (digitalRead(Pin_Button) == LOW){};
+    delay(100);
+  }
+  
   temperatura(); 
   umidadeDoAr();
-  display();   
+  display();  
+  Serial.println(""); 
+  umidadeDaTerra(); 
+  display();    
 }
 
 void umidadeDaTerra(){  
-  //Serial.print("Valor da porta analogica: ");
-	//Serial.println(analogRead(PIN_SensorDeUmidade));
-  valorLidoUmidade = constrain(analogRead(PIN_SensorDeUmidade),666,1023); 
-	valorLidoUmidade = map(valorLidoUmidade,666,1023,100,0);
-  Serial.print("Umidade do Solo =  ");
-	Serial.print(valorLidoUmidade); 
-  Serial.println("%\n");
+  int umidade = analogRead(PIN_SensorUmidadeSolo);
+  Serial.print("Umidade do solo analogica: ");
+  Serial.println(umidade); 
+  int porcento = map(umidade, 0, 1023, 100, 0);
+  Serial.println("Umidade do solo percente:  "+ String(porcento)+" %");
   mensagem1 ="Umidade do Solo:";
-  mensagem2 = String(valorLidoUmidade)+"%";
+  mensagem2 = String(porcento)+"%";
 }
 
 void umidadeDoAr() {
-  int chk1 = DHT.read11(PIN_SensorDHT11);
-  //Serial.println("Umidade do Ar =   " + String(chk)+" %");
-  mensagem1 = "Umidade do Ar:";
+  DHT.read11(PIN_SensorDHT11);
   int hum = DHT.humidity;
+  Serial.println("Umidade do Ar:             " + String(hum)+" %");
+  mensagem1 = "Umidade do Ar:";
   mensagem2 = String(hum) + "%";
 }
-//lcd.write(B11011111)
+
 void temperatura() {
-  int chk2 = DHT.read11(PIN_SensorDHT11);
-  Serial.println("Temperatura =   " + String(DHT.temperature)+" °C");  
+  DHT.read11(PIN_SensorDHT11);
   int temp = DHT.temperature;
+  Serial.println("Temperatura:               " + String(temp)+" °C");  
   mensagem2 = String(temp);
   lcd.setCursor(0,0); 
   lcd.print("Temperatura:"); 
@@ -69,4 +81,3 @@ void display() {
   delay(3000);
   lcd.clear();
 }
-
