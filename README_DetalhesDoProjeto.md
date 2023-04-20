@@ -28,6 +28,7 @@
     Aplicativo para Controle e Monitoramento
 
 5. Imagens:
+
     ![Foto2_Redizida](https://user-images.githubusercontent.com/54177181/233449006-1ddb223b-2d9d-480e-9070-6e0c94dc16e4.jpg)
     ![Foto1_Menor2](https://user-images.githubusercontent.com/54177181/232957592-59daba79-c052-4035-bf16-1cabac4542f7.jpg)
    
