@@ -2,7 +2,15 @@
    
      PROJETO DE IRRIGAÇÃO COM MONITORAMENTO AUTOMATIZADO (AMIP)
  
-2. Objetivos: 
+2. Integrantes do projeto, com os respectivos contatos:  
+
+    Liane Heidemann ( liane22070222@aluno.cesupa.br );
+    Luis Imhotep ( luis22070056@aluno.cesupa.br );
+    Fabio Gabriel Areas  ( fabio21070209@aluno.cesupa.br );
+    Fellipe Santos ( fellipe20070001@aluno.cesupa.br );
+    Luan Augusto ( luan22070212@aluno.cesupa.br ).
+    
+3. Objetivos: 
 
     Trazer inovações tecnológicas para a Ilha de Cutijuba
     Ajudar com a produção agrícola da região
@@ -10,7 +18,7 @@
     Criar mudas mais fortes e saudáveis
     Possibilitar a criação de espécies de plantas menos resistentes na área
   
-3. As principais funcionalidades: 
+4. As principais funcionalidades: 
 
     Irrigação Automatizada
     Monitoramento da Temperatura
@@ -19,19 +27,17 @@
     Visualização de Dados Através de um Display
     Aplicativo para Controle e Monitoramento
 
-4. Telas ou imagens do funcionamento do produto: 
+5. Telas ou imagens do funcionamento do produto: 
 
     ![Foto1_Menor2](https://user-images.githubusercontent.com/54177181/232957592-59daba79-c052-4035-bf16-1cabac4542f7.jpg)
+    ![Foto2_Redizida](https://user-images.githubusercontent.com/54177181/233449006-1ddb223b-2d9d-480e-9070-6e0c94dc16e4.jpg)
+
+ 6. Telas ou imagens do funcionamento do produto: 
+ 
      https://user-images.githubusercontent.com/54177181/233447118-e7b5495f-8b31-4175-9a14-97b6241f90ee.mp4
+     
 
 
-5. Integrantes do projeto, com os respectivos contatos:  
-
-    Liane Heidemann ( liane22070222@aluno.cesupa.br );
-    Luis Imhotep ( luis22070056@aluno.cesupa.br );
-    Fabio Gabriel Areas  ( fabio21070209@aluno.cesupa.br );
-    Fellipe Santos ( fellipe20070001@aluno.cesupa.br );
-    Luan Augusto ( luan22070212@aluno.cesupa.br ).
     
     
     
