@@ -12,20 +12,20 @@
     
 3. Objetivos: 
 
-    Trazer inovações tecnológicas para a Ilha de Cutijuba
-    Ajudar com a produção agrícola da região
-    Automação de estufas
-    Criar mudas mais fortes e saudáveis
-    Possibilitar a criação de espécies de plantas menos resistentes na área
+    Trazer inovações tecnológicas para a Ilha de Cutijuba;
+    Ajudar com a produção agrícola da região;
+    Automação de estufas;
+    Criar mudas mais fortes e saudáveis;
+    Possibilitar a criação de espécies de plantas menos resistentes na área.
   
 4. As principais funcionalidades: 
 
-    Irrigação Automatizada
-    Monitoramento da Temperatura
-    Monitoramento da Umidade do Ar
-    Monitoramento da Umidade do Solo
-    Visualização de Dados Através de um Display
-    Aplicativo para Controle e Monitoramento
+    Irrigação Automatizada;
+    Monitoramento da Temperatura;
+    Monitoramento da Umidade do Ar;
+    Monitoramento da Umidade do Solo;
+    Visualização de Dados Através de um Display;
+    Aplicativo para Controle e Monitoramento.
 
 5. Imagens:
 
