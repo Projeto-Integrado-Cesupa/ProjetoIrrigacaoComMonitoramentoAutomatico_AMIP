@@ -1,37 +1,23 @@
-#include<LiquidCrystal.h>
-#include <dht.h>
-#define PIN_Cooler 8
-dht DHT;
+#include <LiquidCrystal_I2C.h>
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-#define PIN_SensorUmidadeSolo A0
-#define PIN_SensorDHT11 7
-#define PIN_Cooler 8 //LED
-#define Pin_Button 9
+#include <DHT22.h>
+#define pinDATA 2 
+DHT22 dht22(pinDATA);
+
+#define PIN_SensorUmidadeSolo A3
 
 String mensagem1;
 String mensagem2;
-bool estado = 0;
-
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 void setup(){  
+  lcd.init();
+	lcd.backlight();
   pinMode(PIN_SensorUmidadeSolo, INPUT);
-	pinMode(PIN_Cooler, OUTPUT);
-  pinMode(Pin_Button, INPUT_PULLUP);
-  lcd.begin(16, 2);
-	Serial.begin(9600);
-  delay(1000);    
+	Serial.begin(9600);  
   }
  
 void loop(){ 
-  if (digitalRead(Pin_Button == LOW))
-  {
-    estado = !estado; 
-    digitalWrite(PIN_Cooler, estado);
-    while (digitalRead(Pin_Button) == LOW){};
-    delay(100);
-  }
-  
   temperatura(); 
   umidadeDoAr();
   display();  
@@ -42,27 +28,20 @@ void loop(){
 
 void umidadeDaTerra(){  
   int umidade = analogRead(PIN_SensorUmidadeSolo);
-  Serial.print("Umidade do solo analogica: ");
-  Serial.println(umidade); 
   int porcento = map(umidade, 0, 1023, 100, 0);
-  Serial.println("Umidade do solo percente:  "+ String(porcento)+" %");
   mensagem1 ="Umidade do Solo:";
   mensagem2 = String(porcento)+"%";
 }
 
 void umidadeDoAr() {
-  DHT.read11(PIN_SensorDHT11);
-  int hum = DHT.humidity;
-  Serial.println("Umidade do Ar:             " + String(hum)+" %");
-  mensagem1 = "Umidade do Ar:";
-  mensagem2 = String(hum) + "%";
+  int h = dht22.getHumidity();
+  mensagem1 = "Umidade do Ar: ";
+  mensagem2 = String(h) + "%";
 }
 
 void temperatura() {
-  DHT.read11(PIN_SensorDHT11);
-  int temp = DHT.temperature;
-  Serial.println("Temperatura:               " + String(temp)+" °C");  
-  mensagem2 = String(temp);
+  int t = dht22.getTemperature();
+  mensagem2 = String(t);
   lcd.setCursor(0,0); 
   lcd.print("Temperatura:"); 
   lcd.setCursor(0,1);           
