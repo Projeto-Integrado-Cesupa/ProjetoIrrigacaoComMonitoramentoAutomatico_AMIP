@@ -1,9 +1,9 @@
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-#include <DHT22.h>
-#define pinDATA 2 
-DHT22 dht22(pinDATA);
+#include <DFRobot_DHT11.h>
+DFRobot_DHT11 DHT;
+#define DHT11_PIN 2
 
 #define PIN_SensorUmidadeSolo A3
 
@@ -12,10 +12,10 @@ String mensagem2;
 
 void setup(){  
   lcd.init();
-	lcd.backlight();
+  lcd.backlight();
   pinMode(PIN_SensorUmidadeSolo, INPUT);
-	Serial.begin(9600);  
-  }
+  Serial.begin(9600);  
+}
  
 void loop(){ 
   temperatura(); 
@@ -28,19 +28,21 @@ void loop(){
 
 void umidadeDaTerra(){  
   int umidade = analogRead(PIN_SensorUmidadeSolo);
-  int porcento = map(umidade, 0, 1023, 100, 0);
+  int porcento = map(umidade, 0, 1023, 0, 100);
   mensagem1 ="Umidade do Solo:";
   mensagem2 = String(porcento)+"%";
 }
 
 void umidadeDoAr() {
-  int h = dht22.getHumidity();
+  DHT.read(DHT11_PIN);
+  int h = DHT.humidity;
   mensagem1 = "Umidade do Ar: ";
   mensagem2 = String(h) + "%";
 }
 
 void temperatura() {
-  int t = dht22.getTemperature();
+  DHT.read(DHT11_PIN);
+  int t = DHT.temperature;
   mensagem2 = String(t);
   lcd.setCursor(0,0); 
   lcd.print("Temperatura:"); 
