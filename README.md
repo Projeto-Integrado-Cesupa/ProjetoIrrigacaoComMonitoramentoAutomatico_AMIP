@@ -60,6 +60,7 @@ https://github.com/Projeto-Integrado-Cesupa/amip-projeto-irrigacao-monitoramento
 
    Ingles:
    https://youtu.be/ssVJw3uxbbc
+   
    Portugues:
    https://youtu.be/JLAvxtxcF6M
 
