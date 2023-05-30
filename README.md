@@ -56,4 +56,11 @@
 
 https://github.com/Projeto-Integrado-Cesupa/amip-projeto-irrigacao-monitoramento-automatico/assets/54177181/2eb80eb0-0f2e-4421-a11c-d07dc6f825db
 
+7. Videos no YouTube:
+
+   Ingles:
+   https://youtu.be/ssVJw3uxbbc
+   Portugues:
+   https://youtu.be/JLAvxtxcF6M
+
 
