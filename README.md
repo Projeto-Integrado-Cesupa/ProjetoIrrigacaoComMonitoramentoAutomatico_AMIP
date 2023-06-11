@@ -7,7 +7,7 @@
  
 #### 2. Integrantes do projeto, com os respectivos contatos: 
 
-* Liane Ferreira Heidemann (liane22070222@aluno.cesupa.br)  
+* Liane Ferreira Heidemann (liane22070222@aluno.cesupa.br)
     
 * Luis Imhotep (luis22070056@aluno.cesupa.br)
        
@@ -46,22 +46,25 @@
 
 ## Foto do Projeto:
 
+![FotoFinal2](https://github.com/lianeheidemann/ProjetoDeIrrigacaoMonitoramentoAutomatico_AMIP/assets/54177181/a5b93e3f-9898-478b-aae2-3255d4555473)
 
-![1](https://github.com/Projeto-Integrado-Cesupa/amip-projeto-irrigacao-monitoramento-automatico/assets/54177181/0e9a8925-bb6a-42ee-afb8-ab28d2bbaaf7)
-
- 
    
 ## Video:
-  
 
-https://github.com/Projeto-Integrado-Cesupa/amip-projeto-irrigacao-monitoramento-automatico/assets/54177181/2eb80eb0-0f2e-4421-a11c-d07dc6f825db
-
-## Videos no YouTube:
+* ##### Portugues:
+https://github.com/lianeheidemann/ProjetoDeIrrigacaoMonitoramentoAutomatico_AMIP/assets/54177181/27c868d7-40d9-4d39-b8f9-d3db045b137a
 
 * ##### Ingles:
-   [https://youtu.be/ssVJw3uxbbc]
-   
+https://github.com/lianeheidemann/ProjetoDeIrrigacaoMonitoramentoAutomatico_AMIP/assets/54177181/5dc2416f-5027-4611-a1f7-5dbb007b2bb0
+
+  
+## Videos no YouTube:
+
 * ##### Portugues:
-   [https://youtu.be/JLAvxtxcF6M]
+  [https://youtu.be/CeOX5DaF4m8?list=PLGUBdmn-Zx2PDUEz6iiPzg36uL6xhGuvb]
+
+* ##### Ingles:
+  [https://youtu.be/XomKhprOvek?list=PLGUBdmn-Zx2PDUEz6iiPzg36uL6xhGuvb]
+   
 
 
