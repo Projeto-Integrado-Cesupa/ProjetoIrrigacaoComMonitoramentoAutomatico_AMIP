@@ -2,7 +2,7 @@
 
 #### 1. Título do Projeto: 
    
-* **PROJETO DE IRRIGAÇÃO COM MONITORAMENTO AUTOMATIZADO (Grupo: AMIP)**
+* PROJETO DE IRRIGAÇÃO COM MONITORAMENTO AUTOMATIZADO (Grupo: AMIP)
  
  
 #### 2. Integrantes do projeto, com os respectivos contatos: 
