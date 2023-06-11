@@ -1,11 +1,11 @@
 ## ProjetoDeIrrigacaoComMonitoramentoAutomatico (Grupo: AMIP)
 
-#### 1. Título do Projeto: 
+### 1. Título do Projeto: 
    
   PROJETO DE IRRIGAÇÃO COM MONITORAMENTO AUTOMATIZADO 
  
  
-#### 2. Integrantes do projeto, com os respectivos contatos: 
+### 2. Integrantes do projeto, com os respectivos contatos: 
 
 * Liane Ferreira Heidemann (liane22070222@aluno.cesupa.br)
     
