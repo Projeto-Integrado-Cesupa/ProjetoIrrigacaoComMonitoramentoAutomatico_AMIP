@@ -1,4 +1,4 @@
-## ProjetoDeIrrigacaoComMonitoramentoAutomatico (Grupo: AMIP)
+ī## ProjetoDeIrrigacaoComMonitoramentoAutomatico (Grupo: AMIP)
 
 #### 1. Título do Projeto: 
    
@@ -41,8 +41,27 @@
     
 * Monitoramento da Umidade do Solo
     
-* Visualização de Dados Através de um Display
+* Visualização dos Dados Coletados Através de um Display
     
+* Visualização dos Dados Coletados Através do Terminal do Aplicativo "Arduino Bluetooth Controller", baixado na PlayStore: https://play.google.com/store/apps/details?id=com.appsvalley.bluetooth.arduinocontroller
+
+#### 5. Material Utilizado:
+
+* 1 - Placa UNO R3
+* 1 - Sensor de Umidade do Ar e Temperatura (DHT11)
+* 1 - Cooler de 5V – 30x30mm
+* 1 - Bomba D'Água (DC30A-1230)
+* 1 - Sensor de Umidade de Solo
+* 1 - Módulo LCD 16x2 (HD44780)
+* 1 - Módulo Serial I2C para Display LCD (PCF8574)
+* 1 - Módulo Bluetooth (HC-05 - JY-MCU)
+* 2- Interruptor On-Off Slide Switch 3pin
+* 15 - Cabo Jumper
+* 10 - Jumper Rígido em Formato de “U”
+* 1 - Fita Isolante
+* 1 - Mangueira de Irrigação de 0,5m
+* 1 - Fonte de alimentação de 5V para o Arduino 
+* 1 - Fonte de alimentação de 12V para a Bomba D'agua
 
 ## Foto do Projeto:
 
