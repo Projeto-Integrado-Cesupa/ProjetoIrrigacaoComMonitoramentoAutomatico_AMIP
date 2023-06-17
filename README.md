@@ -1,4 +1,4 @@
-ī## ProjetoDeIrrigacaoComMonitoramentoAutomatico (Grupo: AMIP)
+##ProjetoDeIrrigacaoComMonitoramentoAutomatico (Grupo: AMIP)
 
 #### 1. Título do Projeto: 
    
