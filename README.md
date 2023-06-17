@@ -50,10 +50,10 @@
 * 1 - Placa UNO R3
 * 1 - Sensor de Umidade do Ar e Temperatura (DHT11)
 * 1 - Cooler de 5V – 30x30mm
-* 1 - Bomba D'Água (DC30A-1230)
+* 1 - Bomba D'Água de 12V (DC30A-1230)
 * 1 - Sensor de Umidade de Solo
-* 1 - Módulo LCD 16x2 (HD44780)
-* 1 - Módulo Serial I2C para Display LCD (PCF8574)
+* 1 - Módulo LCD 16x2 
+* 1 - Módulo Serial I2C para Display LCD
 * 1 - Módulo Bluetooth (HC-05)
 * 2- Interruptor On-Off Slide Switch 3pin
 * 15 - Cabo Jumper
