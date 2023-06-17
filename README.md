@@ -54,7 +54,7 @@
 * 1 - Sensor de Umidade de Solo
 * 1 - Módulo LCD 16x2 (HD44780)
 * 1 - Módulo Serial I2C para Display LCD (PCF8574)
-* 1 - Módulo Bluetooth (HC-05 - JY-MCU)
+* 1 - Módulo Bluetooth (HC-05)
 * 2- Interruptor On-Off Slide Switch 3pin
 * 15 - Cabo Jumper
 * 10 - Jumper Rígido em Formato de “U”
