@@ -15,7 +15,6 @@
     
 * Fellipe Santos (fellipe20070001@aluno.cesupa.br)
     
-* Luan Augusto (luan22070212@aluno.cesupa.br)
     
     
 #### 3. Objetivos:
